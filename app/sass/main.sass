@@ -21,7 +21,6 @@
 		justify-content: space-between
 		align-items: center
 		padding-top: 15px
-		left: 15px
 		border-bottom: 1px solid #908c96
 		padding-top: 15px
 		padding-bottom: 15px
@@ -29,20 +28,16 @@
 	a
 		color: #fff
 
-
 	&__logo
 		font-family: $title
 		text-transform: uppercase
 		display: flex
 		align-items: flex-end
-		line-height: 1
+		line-height: .8
 
 		a
 			font-size: 30px
 			font-weight: 700
-
-		p
-			font-size: 20px
 
 		span
 			color: $accent
@@ -54,6 +49,9 @@
 		&:focus
 			color: $accent
 
+		img
+			margin-right: 5px
+
 	
 .nav
 	padding-top: 20px
@@ -61,7 +59,7 @@
 
 	ul
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
 
 	li
 		margin-right: 55px
@@ -72,7 +70,7 @@
 	a
 		position: relative
 		z-index: 1
-
+		font-size: 18px
 
 		&:hover,
 		&:focus
@@ -110,17 +108,296 @@
 		color: $accent
 		margin-bottom: 20px
 
+	h3
+		font-size: 30px
+		margin-bottom: 15px
+
 	p
-		font-size: 20px
 		margin-bottom: 15px
 
 	&__sub-title
 		text-transform: uppercase
+		margin-bottom: 80px !important
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		color: #fff
+
+	&__item
+		position: relative
+		padding-top: 125px
+		padding-bottom: 85px
+		width: 50%
+		z-index: 1
+
+		&_bg
+			position: absolute
+			right: 0
+			top: 0
+			z-index: -1
+			height: 100%
+
+		&_icon
+			margin-bottom: 30px
+
+		&:nth-child(even)
+			.services__item_bg
+				right: auto
+				left: 0
+
+		p
+			font-size: 25px
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+
+		span
+			font-size: 20px
+
+
+.advantages
+	padding: 85px 0
+	text-align: center
+
+	h2
+		margin-bottom: 10px
+		color: $accent
+
+	h3
+		margin-bottom: 15px
+		font-size: 18px
+
+	img
+		margin-bottom: 15px
+
+	&__sub-title
+		margin-bottom: 85px
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+
+	&__item
+		width: 28%
+
+		&:nth-child(-n+3)
+			margin-bottom: 40px
+
+
+.value
+	color: #fff
+	padding-top: 150px
+	padding-bottom: 120px
+	background-image: url(../img/value--bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	text-align: center
+
+	h2
+		margin-bottom: 30px
+
+	p
+		margin-bottom: 60px
+		font-size: 30px
+
+
+.project
+	padding: 80px 0
+	text-align: center
+
+	h2
+		color: $accent
+		margin-bottom: 15px
+
+	&__sub-title
 		margin-bottom: 80px
 
 
+.reviews
+	padding: 110px 0
+	text-align: center
+	background-image: url(../img/reviews--bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+	h2
+		color: #fff
+		margin-bottom: 80px
+
+
+.about
+	padding: 80px 0
+	text-align: center
+
+	h2
+		margin-bottom: 80px
+		color: $accent
+
+	h3
+		font-size: 30px
+		color: $accent
+
+	&__list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+
+	&__item
+		width: 23%
+
+	&__number
+		font-family: $title
+		font-size: 80px
+		font-weight: 700
+		text-transform: uppercase
+
+		span
+			font-size: 40px
+
+
+.contacts
+	padding-top: 35px
+	padding-bottom: 30px
+	background-color: #213036
+	color: #fff
+	font-size: 18px
+	border-bottom: 2px solid #fbfcfc
+
+	h3
+		font-size: 25px
+		margin-bottom: 15px
+		text-align: center
+
+	a
+		color: #fff
+
+		&:hover,
+		&:focus
+			color: $accent
+
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	
+	&__logo
+		margin-bottom: 40px
+		justify-content: center
+
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 63%
+
+		.btn
+			width: 100%
+
+		&_col
+			width: 49%
+
+		&_input
+			margin-bottom: 8px
+
+			&:last-child
+				margin-bottom: 0
+
+	&__info
+
+		a, p
+			display: block
+			position: relative
+			margin-bottom: 15px
+			padding-left: 30px
+
+			img
+				position: absolute
+				top: 0
+				left: 0
+
+
 .footer
-	height: 100px
+	background-color: #213036
+	color: #fff
+	font-size: 16px
+	padding: 25px 0
+
+	a
+		color: #fff
+
+		&:hover,
+		&:focus
+			color: $accent
+
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	p
+		&:last-child
+			text-align: right
+
+
+.china
+	padding: 80px 0
+
+	h2
+		margin-bottom: 50px
+		text-align: center
+		color: $accent
+
+	h3
+		font-size: 30px
+		margin-bottom: 15px
+		font-weight: 400
+		text-transform: none
+
+		b
+			color: $accent
+			text-transform: uppercase
+			font-weight: 400
+
+	h4
+		text-transform: none
+		margin-bottom: 15px
+		color: $accent
+
+	p
+		margin-bottom: 15px
+
+	li
+		position: relative
+		margin-bottom: 15px
+		padding-left: 20px
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			height: 8px
+			width: 8px
+			background-color: $accent
+
+	img
+		float: right
+		margin-bottom: 20px
+		
+
+
+
+
 
 
 @import "page"

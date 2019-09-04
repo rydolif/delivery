@@ -69,6 +69,10 @@ $(function() {
       }
   });
 
+  if($(this).scrollTop()>20){
+      $('.header').addClass('header--active');
+  }
+  
 //-------------------------скорость якоря---------------------------------------
   $(".header__list").on("click","a", function (event) {
       event.preventDefault();
@@ -104,9 +108,3 @@ $(function() {
 
   
 });
-
-//----------------------------------------preloader----------------------------------
-
-  // $(window).on('load', function(){
-  //   $('.preloader').delay(1000).fadeOut('slow');
-  // });

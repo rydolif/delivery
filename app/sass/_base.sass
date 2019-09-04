@@ -17,9 +17,9 @@ body
 	position: relative
 	min-width: 320px
 	font-family: $fonts
-	font-size: 14px
+	font-size: 20px
 	color: $text
-	line-height: 1.4
+	line-height: 1.3
 	font-weight: 400
 
 ::selection
@@ -40,6 +40,9 @@ h1, h2, h3, h4, h5, h6
 	margin: 0
 	padding: 0
 	text-transform: uppercase
+
+h1,
+h2
 	font-family: $title
 
 h2
@@ -56,13 +59,15 @@ i
 	color: #fff
 
 input, textarea
-	border: #000 1px solid
+	border: #fff 1px solid
 	border-radius: 0
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
 	width: 100%
-	height: 50px
+	font-size: 18px
+	background-color: transparent
+	color: #fff
 	
 	&:focus:required:invalid
 		border-color: red
@@ -77,11 +82,12 @@ input, textarea
 		-webkit-appearance: none
 
 	&::placeholder
-		color: #000
+		color: #fff
 
 input
 	height: 50px
 	line-height: 50px
+	padding: 0 15px
 
 	&::placeholder
 		line-height: 50px
@@ -100,6 +106,10 @@ input:-moz-placeholder /* Firefox 18- */
   line-height: 50px
 
 textarea
+	padding: 15px
+	resize: none
+	height: 100px
+
 	&::placeholder
 		line-height: 1.4
 
