@@ -12,8 +12,8 @@
 	color: #fff
 
 	&--active, &--menu
-		background-color: rgba($accent, .95)
-		box-shadow: 0 5px 10px rgba($accent, .5)
+		background-color: rgba(#213036, .95)
+		box-shadow: 0 5px 10px rgba(#213036, .5)
 
 	&__container
 		position: relative
@@ -33,11 +33,13 @@
 		text-transform: uppercase
 		display: flex
 		align-items: flex-end
-		line-height: .8
+		line-height: 1
 
 		a
 			font-size: 30px
 			font-weight: 700
+			line-height: .8
+			margin-right: 5px
 
 		span
 			color: $accent
@@ -62,7 +64,7 @@
 		justify-content: space-around
 
 	li
-		margin-right: 55px
+		margin-right: 25px
 
 		&:last-child
 			margin-right: 0
@@ -90,9 +92,6 @@
 	h1
 		font-size: 70px
 		margin-bottom: 15px
-
-	a
-		text-transform: uppercase
 
 	&__sub-title
 		font-size: 30px
@@ -269,7 +268,7 @@
 	background-color: #213036
 	color: #fff
 	font-size: 18px
-	border-bottom: 2px solid #fbfcfc
+	border-bottom: 1px solid #fbfcfc
 
 	h3
 		font-size: 25px
@@ -395,7 +394,56 @@
 		margin-bottom: 20px
 		
 
+.sea
+	&--hero
+		background-image: url(../img/hero--sea.jpg)
 
+	&--content
+		padding: 80px 0
+
+		h2
+			text-align: center
+			color: $accent
+			margin-bottom: 30px
+
+		h3
+			font-size: 18px
+			margin-bottom: 15px
+
+
+		&__sub-title
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 50px
+			font-weight: 600
+
+		&__row
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-bottom: 130px
+
+			img
+				margin-bottom: 30px
+
+			p
+				margin-bottom: 15px
+
+		&__col
+			width: 49%
+
+		&__list
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+			text-align: center
+
+			img
+				margin-bottom: 15px
+
+
+		&__item
+			width: 31%
 
 
 
