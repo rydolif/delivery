@@ -258,6 +258,7 @@
 		display: flex
 		justify-content: space-around
 		flex-wrap: wrap
+		margin-bottom: 55px
 
 	&__item
 		width: 23%
@@ -487,6 +488,50 @@
 
 			p
 				line-height: 1.1
+	
+	&--contacts
+		padding: 80px 0
+
+		h2
+			text-align: center
+			color: $accent
+			margin-bottom: 30px
+
+		p
+			span
+				color: $accent
+				font-size: 22px
+
+		a
+			
+			color: $text
+
+			&:hover,
+			&:focus
+				color: $accent
+
+		a,
+		p
+			position: relative
+			padding-left: 30px
+
+			img
+				position: absolute
+				top: 0
+				left: 0
+
+		&__sub-title
+			text-transform: uppercase
+
+		&__info
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-top: 70px
+
+		&__item
+			font-size: 18px
+
 
 
 
