@@ -79,6 +79,12 @@
 		&:focus
 			color: $accent
 
+	&__tel
+		display: none
+
+	.btn
+		display: none
+
 
 .hero
 	padding-top: 420px
@@ -369,6 +375,10 @@
 				&::before
 					opacity: 1
 
+		.active
+			&::before
+				opacity: 1 !important
+
 
 .reviews
 	padding: 110px 0
@@ -480,6 +490,8 @@
 
 		.btn
 			width: 100%
+			min-width: 100%
+			padding: 0
 
 		&_col
 			width: 49%
@@ -573,6 +585,7 @@
 	img
 		float: right
 		margin-bottom: 20px
+		margin-left: 20px
 		
 
 .sea
@@ -680,16 +693,6 @@
 			&:focus
 				color: $accent
 
-		a,
-		p
-			position: relative
-			padding-left: 30px
-
-			img
-				position: absolute
-				top: 0
-				left: 0
-
 		&__sub-title
 			text-transform: uppercase
 
@@ -698,6 +701,16 @@
 			justify-content: space-between
 			flex-wrap: wrap
 			margin-top: 70px
+
+			a,
+			p
+				position: relative
+				padding-left: 30px
+
+				img
+					position: absolute
+					top: 0
+					left: 0
 
 		&__item
 			font-size: 18px

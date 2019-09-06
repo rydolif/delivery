@@ -21,6 +21,12 @@ $('.tabs ul a:first').addClass('active');
       el: '.project__scrollbar',
       hide: true,
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
+    }
   });
 
 //------------------------------slider-hero-----------------------------
@@ -31,6 +37,12 @@ $('.tabs ul a:first').addClass('active');
       el: '.reviews__scrollbar',
       hide: true,
     },
+    breakpoints: {
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
+    }
   });
 
 //------------------------------гамбургер-----------------------------
